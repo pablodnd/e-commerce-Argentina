@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card" style="width: 25rem;">
+            <img src="https://images.samsung.com/ar/smartphones/galaxy-z-flip/images/galaxy-z-flip-share-image.jpg" class="card-img-top" alt="zflip" style="width:250px;">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Galaxy Z-Flip</h5>
+                <p class="card-text">El smartphone plegable ideal para tu bolsillo, con un revolucionario cristal flexible, una cámara hecha para sostenerse por sí misma y una batería dual que dura todo el día. Conocé el smartphone que está cambiando la forma del futuro.</p>
+                <a href="" class="btn btn-primary">Go somewhere</a>
+                <button class="btn btn-info" type="button" id="addressSearch"
+                        onclick="location.href='@Url.Action("Compras", "Compras")'">
+                    Comprar!
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
