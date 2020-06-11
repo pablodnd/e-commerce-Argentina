@@ -1,11 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="jumbotron">
+    <h1>e-commerce-Argentina</h1>
+    <p class="lead">Tienda de teléfonos.</p>
 </div>
+
 <div class="row">
     <div class="col-md-6">
         <div class="card" style="width: 25rem;">
@@ -13,13 +14,12 @@
             <div class="card-body">
                 <h5 class="card-title">Samsung Galaxy Z-Flip</h5>
                 <p class="card-text">El smartphone plegable ideal para tu bolsillo, con un revolucionario cristal flexible, una cámara hecha para sostenerse por sí misma y una batería dual que dura todo el día. Conocé el smartphone que está cambiando la forma del futuro.</p>
-                
+
                 <button class="btn btn-info" type="button" id="addressSearch"
-                        onclick="location.href='@Url.Action("Compras", "Compras")'">
+                        onclick="location.href='@Url.Action("Index", "Checkout")'">
                     Comprar!
                 </button>
             </div>
         </div>
     </div>
 </div>
-

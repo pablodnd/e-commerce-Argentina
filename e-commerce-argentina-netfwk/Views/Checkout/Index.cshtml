@@ -1,10 +1,10 @@
 ﻿
 @{
-    ViewData["Title"] = "Compras";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model e_commerce_argentina_netcore.Models.ArticuloViewModel
+@model e_commerce_argentina_netfwk.ArticuloViewModel
 
 <div>
     <div class="row">
@@ -14,7 +14,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 25rem;">
                 <img src="https://images.samsung.com/ar/smartphones/galaxy-z-flip/images/galaxy-z-flip-share-image.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Samsung Galaxy Z-Flip</h5>
@@ -27,11 +27,12 @@
                     <li class="list-group-item">Pagalo hasta en 6 cuotas!</li>
                 </ul>
                 <div class="card-body">
-                    <form action="/procesar-pago" method="POST">
-                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                                data-preference-id="@Html.DisplayFor(model => model.Id)">
-                        </script>
-                    </form>
+                    @*<form action="/home/about" method="POST">
+            <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                    data-preference-id="@Html.DisplayFor(model => model.Id)">
+            </script>
+        </form>*@
+                    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
                 </div>
             </div>
         </div>
@@ -39,8 +40,5 @@
 
 </div>
 
-<style type="text/css">
-    .center {
-    }
-</style>
+
 
