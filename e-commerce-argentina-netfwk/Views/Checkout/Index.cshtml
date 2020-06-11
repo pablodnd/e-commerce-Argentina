@@ -6,6 +6,8 @@
 
 @model e_commerce_argentina_netfwk.ArticuloViewModel
 
+<script src="https://www.mercadopago.com/v2/security.js" view="Checkout"></script>
+
 <div>
     <div class="row">
         <div class="col-md-6">
@@ -28,11 +30,11 @@
                 </ul>
                 <div class="card-body">
                     @*<form action="/home/about" method="POST">
-            <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                    data-preference-id="@Html.DisplayFor(model => model.Id)">
-            </script>
-        </form>*@
-                    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar con Mercado Pago</a>
+                            <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                                    data-preference-id="@Html.DisplayFor(model => model.Id)">
+                            </script>
+                        </form>*@
+                    <a href="@Html.DisplayFor(model => model.InitPoint)">Pagar la compra</a>
                 </div>
             </div>
         </div>

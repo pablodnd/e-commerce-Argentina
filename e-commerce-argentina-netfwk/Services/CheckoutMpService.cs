@@ -13,11 +13,13 @@ namespace e_commerce_argentina_netfwk
         {
             this._accessToken = "TEST-2322448352582789-061101-864d55dd7466f15dd8b44b180b0e8f42-582774213";
             MercadoPago.SDK.AccessToken = this._accessToken;
+            MercadoPago.SDK.IntegratorId = "dev_24c65fb163bf11ea96500242ac130004";
         }
 
         public Preference CrearPreferencia(ArticuloViewModel articulo)
         {
             Preference preference = new Preference();
+            preference.NotificationUrl = "https://webhook.site/b92ce833-40a4-43f9-85e2-b4ab7e9a43c4";
             var redirects = new BackUrls();
             redirects.Failure = "https://localhost:44394/Checkout/Failure";
             redirects.Success = "https://localhost:44394/Checkout/Success";

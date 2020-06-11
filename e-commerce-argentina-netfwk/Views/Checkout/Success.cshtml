@@ -6,7 +6,10 @@
 
 <h2>Success!!!</h2>
 <h4>Info:</h4>
-<p>@Request.QueryString["PAYMENT_ID"] ?? "";</p>
-<p>@Request.QueryString["PREFERENCE_ID"] ?? "";</p>
-<p>@Request.QueryString["EXTERNAL_REFERENCE"] ?? "";</p>
-<p>@Request.QueryString["SITE_ID"] ?? "";</p>
+<p>collection_id: @Request.QueryString["collection_id"]</p>
+<p>collection_status: @Request.QueryString["collection_status"] </p>
+<p>external_reference: @Request.QueryString["external_reference"] </p>
+<p>payment_type: @Request.QueryString["payment_type"] </p>
+<p>preference_id: @Request.QueryString["preference_id"] </p>
+<p>site_id: @Request.QueryString["site_id"] </p>
+<p>processing_mode: @Request.QueryString["processing_mode"] </p>
